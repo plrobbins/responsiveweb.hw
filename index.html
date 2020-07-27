@@ -7,7 +7,9 @@
   <title>My Responsive Website</title>
   <!--Adding the Bootstrap Stylesheet-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <style>
   body {
@@ -16,27 +18,34 @@
 
   .navbar-brand {
     background-color: teal;
-    color: white;
+    /* color: white; */
   }
 
   .row1 {
     background-color: white;
     padding: 20px;
   }
-  .row1 h2 {
+
+  /* .row1 h2 {
     color: teal;
+  } */
+  footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
   }
-  
 </style>
 
 <body>
   <!--Creating the overall grid-->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-          <div class="col-lg-9">
-            <span class="navbar-brand mb-1 h1">Philip Robbins</span>
+  <div class="container-fluid ">
+    <div class="row  mb-5 bg-white">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 p-0">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light m-0 h-100 p-0">
+          <div class="col-sm-8 pl-0">
+            <span class="navbar-brand m-0 h1 p-2  bg-info px-3 text-light">Philip Robbins</span>
           </div>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,7 +53,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right ">
               <li class="nav-item">
                 <a class="nav-link" href="../responsiveweb.hw/index.html">About</a>
               </li>
@@ -58,24 +67,35 @@
           </div>
       </div>
     </div>
-    <div class="row1">
-      <div class="col-sm-2">
+    <div class="row ">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 bg-white">
         <h2>About Me</h2>
+
+        <hr>
+
+        <!-- <div class="col-md-12"> -->
+          <p style="float: left;">
+        <img class="img m-3 pb-2" src="Images/PR Headshot.JPG" alt="Phil Robbins"
+          style="float: left; width:200px; height:200px;">
+        <!-- <div class="col-sm-12"> -->
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make
+          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions
+          of Lorem Ipsum.</p>
+        <!-- </div> -->
       </div>
-      <hr>
-      <div class="row2">
-        <div class="col-md-12">
-          <img class="img" src="Images/PR Headshot.JPG" alt="Phil Robbins"
-            style="position: relative;width:200px;height:200px;">
-          <div class="col-sm-12">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </div>
-  
+<footer class="footer bg-secondary align-middle">
+  <p class='text-center text-light mb-0 p-2'>Copyright 2020©</p>
+</footer>
 
 </body>
 
