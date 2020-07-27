@@ -12,4 +12,7 @@ The purpose of this assignment is to create a responsive portfolio design. To ac
 Here are images of what a responsive page should look like.
 
 **Full Screen Webpage**
-![Fullscreen Webpage]
+![Fullscreen Webpage](https://github.com/plrobbins/responsiveweb.hw/blob/master/Images/ResponsiveFullScreen.png)
+
+**Responsive Screen**
+![Responsive Screen](https://github.com/plrobbins/responsiveweb.hw/blob/master/Images/ResponsiveWindow.png)
